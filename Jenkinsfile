@@ -8,7 +8,8 @@ pipeline {
 
     stages {
         stage('check'){
-            steps{
+            steps {
+                echo 'first step'
                 sh 'mvn --version'
                 sh 'docker version'
             }
