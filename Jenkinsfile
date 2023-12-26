@@ -1,11 +1,11 @@
 pipeline {
-    agent : any
+    agent = any
     environment {
         mavenHome = tool 'myMaven'
         dockerHome = tool 'myDocker'
     }
 
-    Stages {
+    stages {
         stage ('check'){
             steps{
                 sh 'mvn --version'
